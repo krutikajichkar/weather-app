@@ -1,0 +1,25 @@
+#BottomSection{
+    width: 800px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.card{
+    width:350px;
+    margin-bottom: 30px;
+    background-color:rgb(7, 9, 36) ;
+    text-align: center;
+}
+#card-conatiner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-wrapper{
+    margin-top: -15px;
+}
+.cardBottom{
+    height: 130px;
+    margin-bottom: 23px;
+}

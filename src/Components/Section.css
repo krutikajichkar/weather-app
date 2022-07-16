@@ -1,0 +1,38 @@
+#section-div{
+    background-color:black;
+    width: 70%;
+    height: 100vh;
+}
+.Daywise-weather{
+    width: 130px;
+    height: 130px;
+    background-color:rgb(7, 9, 36) ;
+    text-align: center;
+    padding: 8px;
+}
+.degree{
+    font-weight: 800;
+    font-size: 14px;
+    margin-left: 15px;
+    background-color: rgb(47, 39, 70);
+    border-radius: 60%;
+    margin-top: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+#miniCard-wrapper{
+    margin-top: 30px;
+    width: 800px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    
+}
+/* @media(max-width:900px){
+    #miniCard-wrapper{
+        display: inline-block;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+} */

@@ -1,0 +1,14 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+#app-div{
+    display: flex;
+    flex-direction: row;
+}
+/* @media(max-width:900px){
+    #app-div{
+        display: flex;
+        flex-direction: column;
+    }
+} */
