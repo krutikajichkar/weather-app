@@ -3,12 +3,16 @@ import "./Sidebar.css";
 import sunny from "../images/sunny.svg";
 import { MyLocation } from "@mui/icons-material";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+//import { useEffect } from "react";
 
-function Sidebar(props) {
+
+function Sidebar({crossHandler}) {
+  
+ 
   return (
     <div id="sidebar-div">
       <div id="icon-div">
-        <button onClick={props.crossHandler}>Search for Places</button>
+        <button onClick={crossHandler}>Search for Places</button>
         <MyLocation
           style={{
             width: "35px",
@@ -44,5 +48,8 @@ function Sidebar(props) {
     </div>
   );
 }
+
+
+
 
 export default Sidebar;

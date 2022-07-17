@@ -1,10 +1,12 @@
 import './App.css';
-import { useState } from 'react';
+import {  useState ,useEffect} from 'react';
 import Section from './Components/Section';
 import Sidebar from './Components/Sidebar';
 import SidebarHide from './Components/SidebarHide';
 
 function App() {
+  //const [city, setCity] = useState('Nagpur')
+
   const [show, setShow] = useState(false)
   const HidecrossHandler = () => {
     setShow(false);
@@ -12,6 +14,7 @@ function App() {
   const sidecrossHandler = () => {
     setShow(true);
   }
+  
   
   return (
    
