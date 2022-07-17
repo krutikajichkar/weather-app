@@ -4,15 +4,15 @@ import sunny from "../images/sunny.svg";
 import { MyLocation } from "@mui/icons-material";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-function Sidebar() {
+function Sidebar(props) {
   return (
     <div id="sidebar-div">
       <div id="icon-div">
-        <button>Search for Places</button>
+        <button onClick={props.crossHandler}>Search for Places</button>
         <MyLocation
           style={{
-            width: "25px",
-            height: "25px",
+            width: "35px",
+            height: "35px",
             backgroundColor: "rgb(96, 96, 96)",
             borderRadius: "50%",
             padding: "6px",

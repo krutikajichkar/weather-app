@@ -1,20 +1,22 @@
 import './App.css';
+import { useState } from 'react';
 import Section from './Components/Section';
 import Sidebar from './Components/Sidebar';
+import SidebarHide from './Components/SidebarHide';
 
 function App() {
-  const getData = async() => {
-    
+  const [show, setShow] = useState(false)
+  const HidecrossHandler = () => {
+    setShow(false);
   }
-  useEffect(() => {
-    
-  
-  }, [])
+  const sidecrossHandler = () => {
+    setShow(true);
+  }
   
   return (
    
      <div id='app-div'>
-    <Sidebar/>
+    {show?<SidebarHide crossHandler={HidecrossHandler}/>:<Sidebar crossHandler={sidecrossHandler}/>}
     <Section/>
     </div>
     

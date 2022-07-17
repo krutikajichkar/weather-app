@@ -8,7 +8,7 @@ function BottomSection() {
       <h1>Today's Highlights</h1>
       
       <div id="card-conatiner">
-      //card1
+      {/* //card1 */}
         <div className="card ">
           <h3>Wind Status</h3>
           <div className="text-wrapper">
@@ -34,11 +34,11 @@ function BottomSection() {
             <h5 style={{ marginLeft: "5px" }}>wsw</h5>
           </div>
         </div>
-        //card2
+        {/* //card2 */}
         <div className="card">
           <h3>Humidity</h3>
           <div className="text-wrapper">
-            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>84</span>
+            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>85</span>
             <span style={{ fontSize: "30px", fontWeight: "400" }}>%</span>
           </div>
          <div style={{marginLeft:'70px'}}>
@@ -47,7 +47,7 @@ function BottomSection() {
             height="10px"
             rect
             fontColor="gray"
-            percentage="70"
+            percentage="84"
             rectPadding="1px"
             rectBorderRadius="20px"
             trackPathColor="transparent"
@@ -57,7 +57,7 @@ function BottomSection() {
           />
          </div>
         </div>
-        //card3
+        {/* //card3 */}
         <div className="card cardBottom">
           <h3>Visibility</h3>
           <div className="text-wrapper">
@@ -69,7 +69,7 @@ function BottomSection() {
             </span>
           </div>
         </div>
-        //card4
+        {/* //card4 */}
         <div className="card cardBottom">
           <h3>Air Pressure</h3>
           <div className="text-wrapper">
