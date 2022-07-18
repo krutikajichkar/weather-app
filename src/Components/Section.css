@@ -29,10 +29,20 @@
     justify-content: space-around;
     
 }
-/* @media(max-width:900px){
-    #miniCard-wrapper{
-        display: inline-block;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-} */
+@media(max-width:900px){
+   #section-div{
+    width: 100%;
+    height: 100%;
+   }
+   #miniCard-wrapper{
+    width: 290px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+   .Daywise-weather{
+    margin-bottom: 15px;
+   }
+   .degree{
+    display: none;
+   }
+}

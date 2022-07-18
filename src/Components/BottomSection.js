@@ -2,8 +2,29 @@ import React from "react";
 import "./BottomSection.css";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import ProgressBar from "react-animated-progress-bar";
-function BottomSection() {
+import { useState , useEffect } from "react";
+import { useSelector } from "react-redux/es/exports";
+function BottomSection(props) {
+  // const [currentWeather, setcurrentWeather] = useState([]);
+  // const city = useSelector(state => state.city)
+
+  // useEffect(()=>{
+  //   const getData = async() => {
+  //     try{
+  //       let url = `http://api.weatherstack.com/current?access_key=d6960de5bb7644304b29a83618d88fd8&query=${city}`
+  //       let data = await fetch(url);
+  //       let parseData = await data.json();
+  //       setcurrentWeather(parseData.current)
+       
+  //     }
+  //     catch(e){
+  //       console.log(e.message)
+  //     }
+  //   }
+  //   getData();
+  // },[])
   return (
+    
     <div id="BottomSection">
       <h1>Today's Highlights</h1>
       
@@ -12,7 +33,7 @@ function BottomSection() {
         <div className="card ">
           <h3>Wind Status</h3>
           <div className="text-wrapper">
-            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>7</span>
+            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>{props.currentWeather.wind_speed}</span>
             <span style={{ fontSize: "20px", fontWeight: "600" }}>mph</span>
           </div>
           <div
@@ -31,23 +52,23 @@ function BottomSection() {
                 padding: "2px",
               }}
             />
-            <h5 style={{ marginLeft: "5px" }}>wsw</h5>
+            <h5 style={{ marginLeft: "5px" }}>{props.currentWeather.wind_dir}</h5>
           </div>
         </div>
         {/* //card2 */}
         <div className="card">
           <h3>Humidity</h3>
           <div className="text-wrapper">
-            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>85</span>
+            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>{props.currentWeather.humidity}</span>
             <span style={{ fontSize: "30px", fontWeight: "400" }}>%</span>
           </div>
          <div style={{marginLeft:'70px'}}>
          <ProgressBar
-            width="250px"
+            width="230px"
             height="10px"
             rect
             fontColor="gray"
-            percentage="84"
+            percentage={props.currentWeather.humidity}
             rectPadding="1px"
             rectBorderRadius="20px"
             trackPathColor="transparent"
@@ -61,7 +82,7 @@ function BottomSection() {
         <div className="card cardBottom">
           <h3>Visibility</h3>
           <div className="text-wrapper">
-            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>6,4</span>
+            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>{props.currentWeather.visibility}</span>
             <span
               style={{ fontSize: "30px", fontWeight: "600", marginLeft: "6px" }}
             >
@@ -73,7 +94,7 @@ function BottomSection() {
         <div className="card cardBottom">
           <h3>Air Pressure</h3>
           <div className="text-wrapper">
-            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>998</span>
+            <span style={{ fontWeight: "bolder", fontSize: "50px" }}>{props.currentWeather.pressure}</span>
             <span
               style={{ fontSize: "30px", fontWeight: "600", marginLeft: "6px" }}
             >

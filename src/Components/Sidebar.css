@@ -62,8 +62,8 @@ button{
     justify-content: center;
     margin-top: -10px;
 }
-/* @media(max-width:900px){
+@media(max-width:900px){
     #sidebar-div{
-        width:100vw
+        width:100%;
     }
-} */
+}

@@ -1,7 +1,7 @@
 import {COUNTRY_NAME} from './type'
 
 const initialstate = {
-    city:'nagpur,in'
+    city:'New York'
 }
 
  const reducer = (state = initialstate , action) => {
@@ -9,7 +9,7 @@ const initialstate = {
         case COUNTRY_NAME : 
         return{
             ...state,
-            cityname : action.payload
+            city : action.payload
         }
          default : return state
     }

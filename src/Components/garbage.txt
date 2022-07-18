@@ -1,0 +1,10 @@
+//
+http://api.weatherstack.com/forecast
+    ? access_key = d6960de5bb7644304b29a83618d88fd8
+    & query = New York
+
+    https://api.weatherstack.com/forecast
+    ? access_key = d6960de5bb7644304b29a83618d88fd8
+    & query = New York
+    & forecast_days = 1
+    & hourly = 1
