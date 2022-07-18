@@ -10,7 +10,7 @@ import { useSelector } from "react-redux/es/hooks/useSelector";
 function App() {
   const [currentdata, setcurrentdata] = useState([]);
   const [location, setlocation] = useState([])
-  const city = useSelector(state => state.city)
+  const currentCity = useSelector(state => state.city)
 
   const [show, setShow] = useState(false);
   const HidecrossHandler = () => {
@@ -23,7 +23,7 @@ function App() {
   useEffect(()=>{
     const getData = async() => {
       try{
-        let url = `http://api.weatherstack.com/current?access_key=d6960de5bb7644304b29a83618d88fd8&query=${city}`
+        let url = `http://api.weatherstack.com/forecast?access_key=d6960de5bb7644304b29a83618d88fd8&query=${currentCity}`
         let data = await fetch(url);
         let parseData = await data.json();
         setlocation(parseData.location)

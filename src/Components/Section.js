@@ -8,7 +8,7 @@ import sunny from "../images/sunny.svg";
 import "./BottomSection.css";
 import NearMeIcon from "@mui/icons-material/NearMe";
 import ProgressBar from "react-animated-progress-bar";
-import BottomSection from "./BottomSection";
+
 
 function Section(props) {
   return (
@@ -171,7 +171,7 @@ function Section(props) {
                 height="10px"
                 rect
                 fontColor="gray"
-                percentage={props.currentWeather.humidity}
+                percentage="84"
                 rectPadding="1px"
                 rectBorderRadius="20px"
                 trackPathColor="transparent"

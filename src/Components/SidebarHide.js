@@ -2,12 +2,12 @@
 import React from 'react'
 import './SidebarHide.css'
 import ClearIcon from '@mui/icons-material/Clear';
-import SearchIcon from '@mui/icons-material/Search';
+//import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux/es/hooks/useDispatch';
 import { countryName } from './redux/action';
 function SidebarHide(props) {
-  const [location, setlocation] = useState('Nagpur')
+  const [location, setlocation] = useState('')
   const dispatch = useDispatch()
   
   return (
