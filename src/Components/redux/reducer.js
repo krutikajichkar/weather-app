@@ -1,7 +1,8 @@
-import {COUNTRY_NAME} from './type'
+import {COUNTRY_NAME, FETCH_USERS_SUCCESS} from './type'
 
 const initialstate = {
-    city:'New York'
+    city : 'Nagpur'
+    
 }
 
  const reducer = (state = initialstate , action) => {
@@ -11,6 +12,13 @@ const initialstate = {
             ...state,
             city : action.payload
         }
+        // case FETCH_USERS_SUCCESS : 
+        // return {
+        //     ...state,
+        //     loading : false ,
+        //     data : action.payload ,
+        //     error : ''
+        // }
          default : return state
     }
 }

@@ -10,7 +10,7 @@ function Sidebar(props) {
   //  const [location, setlocation] = useState([]);
   //  const [currentdata, setcurrentdata] = useState([])
   //  const city = useSelector(state => state.city)
-  // setweatherData(props.weatherData);
+  // // setweatherData(weatherData);
   
 
   // useEffect(()=>{
