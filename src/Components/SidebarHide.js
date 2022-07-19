@@ -10,7 +10,11 @@ function SidebarHide(props) {
   const [location, setlocation] = useState('Nagpur')
   const dispatch = useDispatch()
  
-  
+  const searchhandler = () => {
+    dispatch(countryName(location))
+    setlocation('')
+    
+  }
   return (
    <div id='main-div'>
     <div id='sidebarHide-wrapper'>
@@ -23,7 +27,7 @@ function SidebarHide(props) {
       <input type="text"  placeholder='Search Location'  onChange={(e) => setlocation(e.target.value)}/>
        {/* <SearchIcon id='search-icon' />  */}
      </div>
-     <button id='search-btn' onClick={() => dispatch(countryName(location))}>Search</button>
+     <button id='search-btn' onClick={searchhandler}>Search</button>
      </div>
     </div>
    

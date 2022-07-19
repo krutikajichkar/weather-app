@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Section from "./Components/Section";
 import Sidebar from "./Components/Sidebar";
 import SidebarHide from "./Components/SidebarHide";
-
 import { useSelector } from "react-redux/es/hooks/useSelector";
 
 
@@ -11,6 +10,8 @@ function App() {
   const [currentdata, setcurrentdata] = useState([]);
   const [location, setlocation] = useState([]);
   const city = useSelector(state => state.city)
+ // const [city, setcity] = useState('')
+  
 
  
   const [show, setShow] = useState(false);
@@ -32,12 +33,14 @@ function App() {
         setlocation(parseData.location)
         setcurrentdata(parseData.current)
        
+       
       }
       catch(e){
         console.log(e.message)
       }
     }
     getData();
+    
   },[city])
   
   return (

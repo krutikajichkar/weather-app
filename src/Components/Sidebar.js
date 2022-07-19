@@ -59,7 +59,7 @@ function Sidebar(props) {
           {props.currentdata.weather_descriptions}
         </h4>
 
-        <p className='footer'>Today . Fri, 5 Jun</p>
+        <p className='footer'>{props.location.localtime}</p>
 
          <div id="span-div">
          <LocationOnIcon style={{color:'grey'}}/>
